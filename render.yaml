@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: elisium
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python server.py"
+    autoDeploy: true
+    envVars:
+      - key: ELISIUM_HOST
+        value: 0.0.0.0
+      - key: ELISIUM_SECRET
+        generateValue: true
