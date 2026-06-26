@@ -1,0 +1,2 @@
+# No third-party packages are required.
+# The site uses Python stdlib + SQLite.
